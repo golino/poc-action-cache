@@ -36,7 +36,8 @@ jobs:
           echo test, and deploy your project.
       
       - run: |
-          echo "${ GITHUB_REF }"
+          echo "${GITHUB_REPOSITORY}"
+          echo "${GITHUB_REF}"
       
       - name: Action Restore Cache
         id: restor_cache
