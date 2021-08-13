@@ -35,6 +35,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       
+      - run: |
+          echo "${ GITHUB_REF }"
+      
       - name: Action Restore Cache
         id: restor_cache
         uses: actions/cache@v2
