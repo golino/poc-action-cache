@@ -38,5 +38,6 @@ jobs:
       - name: Action Restore Cache
         id: restor_cache
         uses: actions/cache@v2
-          path: ./
-          key: "cci-platform-plsql-converter-frontend-pocNpmArtifacts"
+        with:
+          path: '/home/root/.npm/_cacache/'
+          key: 'cci-platform-plsql-converter-frontend-pocNpmArtifacts'
